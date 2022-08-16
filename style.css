@@ -1,39 +1,26 @@
-/*
-  seletor:chave 
-  propriedade:valor
-
-  se repetir vale a ultima;
-
-body {
-  background: red;
-
-A cascata perde a prioridade caso haja uma maior especificidade da declaração;
-
-Selector Specificity: (0,0,1)
-Selector Specificity: (0,1,0)
-Selector Specificity: (1,0,0)
-
-#id pedo 100
-.class peso 10
-element peso 1 - (0,0,1)
-
-regra de organização do myke brito
-1- global;
-2 - header
-
-}*/
-
 /* GLOBAL */
 * {
   margin: 0;
   padding: 0;
 }
+
 body {
   background-color: #ffedd5; /* hex: 0-F */
+  font-family: 'Roboto', sans-serif;
 }
 
 ul {
   list-style: none;
+}
+
+/* FONTS */
+h1,
+h2,
+h3,
+.price {
+  font-family: 'Roboto Serif', serif;
+  text-transform: uppercase;
+  color: #2d2c2a;
 }
 
 /* HEADER */
@@ -47,23 +34,36 @@ section {
   max-width: 300px;
   margin: 0 auto;
 }
-header h1 p {
+
+header h1 {
   margin-bottom: 4px;
+  font-size: 28px;
+  line-height: 33px;
 }
+
 header h1 span {
   color: #995000;
+}
+
+header p {
+  font-size: 14px;
+  line-height: 16px;
+
+  color: rgba(0, 0, 0, 0.7);
 }
 
 /* SECTION */
 section {
   margin-bottom: 24px;
 }
+
 section h2 {
   background-color: #fed7aa;
   padding: 8px 16px;
   text-align: center;
 
   margin-bottom: 24px;
+  font-size: 18px;
 }
 
 /* LISTA */
@@ -78,4 +78,12 @@ li .details {
 
 .details h3 {
   margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.details p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  line-height: 21px;
 }
